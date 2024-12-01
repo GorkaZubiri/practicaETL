@@ -14,6 +14,15 @@ Los objetivos específicos incluyen:
 - Comparar el rendimiento de los jugadores según su posición, considerando tanto sus estadísticas individuales como el club al que pertenecen.
 - Extraer conclusiones útiles para equipos, entrenadores y analistas de la Premier League.
 
+## Dataset
+
+Los datasets utilizados en este trabajo provienen de Kaggle, una plataforma muy reconocida. Elegimos los datasets **‘Premier League Player Stats 23/24’** porque encajan perfectamente con los objetivos del proyecto. Estos datasets contienen dos archivos:
+
+- **`players_overview`**: Información general sobre los jugadores.
+- **`players_stats`**: Estadísticas detalladas de rendimiento de los jugadores.
+
+Ambos datasets están en formato CSV, un formato ampliamente utilizado, fácil de manipular y compatible con casi todas las herramientas de análisis de datos.
+
 ## Scripts del Proyecto
 
 Este proyecto está compuesto por tres scripts principales:
