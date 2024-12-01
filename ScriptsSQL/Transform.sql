@@ -148,6 +148,16 @@ FROM TemporaryOverview
 WHERE Facebook IS NOT NULL AND Facebook != '';
 
 
+-- La columna 'Height' además de valores faltantes tiene vacíos
+SELECT 'Height',
+    (COUNT(CASE WHEN Height IS NOT NULL AND Height != '' THEN 1 END) * 100.0 / COUNT(*)) AS Completitud
+FROM TemporaryOverview
+UNION ALL
+SELECT 'Club',
+    (COUNT(CASE WHEN Club IS NOT NULL AND Club != '' THEN 1 END) * 100.0 / COUNT(*)) AS Completitud
+FROM TemporaryOverview;
+
+
 
 -- 6. Métrica de Consistencia: Evalúa si los datos no presentan contradicciones y son coherentes en términos de significado, estructura y formato
 -- En este caso, la consistencia es similar a la de la estructura, ya que los únicos datos inconsistentes son los de 'Date of Birth'
